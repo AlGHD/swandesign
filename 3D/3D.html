@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Page</title>
+    <link rel="stylesheet" href="../3D/style-3D.css"> 
+</head>
+<body>
+    <header class="header-section">
+        <div class="logo">Swan Design</div>
+        <nav>
+            <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../3D.html">3D</a></li>
+                <li><a href="../Video/Video.html">Video</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="padding-top: 80px; text-align: center;"> 
+        <h1>3D Video</h1>
+        <p>Experience our immersive 3D content showcasing innovative designs.</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mTm2VuKYyOA" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </main>
+    
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
